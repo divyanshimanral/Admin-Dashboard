@@ -15,7 +15,6 @@ import AvTimerOutlinedIcon from "@mui/icons-material/AvTimerOutlined";
 import MenuOpenOutlinedIcon from "@mui/icons-material/MenuOpenOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 import Profile from "../../assets/avatar3.jpg";
-import { People } from "@mui/icons-material";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -27,8 +26,9 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       onClick={() => setSelected(title)}
       icon={icon}
     >
-      <Typography>{title}</Typography>
-      <Link to={to} />
+      <Link to={to} className="link-active">
+        <Typography>{title}</Typography>
+      </Link>
     </MenuItem>
   );
 };
@@ -43,12 +43,19 @@ const MainSidebar = () => {
       sx={{
         "& .ps-sidebar-container": {
           background: `${colors.primary[400]} !important`,
-          // padding: "5px 35px 5px 20px !important",
         },
-        "& a.ps-active": {
+        "& a": {
+          color: "white",
+          textDecoration: "none",
+          fontWeight: 900,
+        },
+        "& a.ps-active .link-active ": {
           color: "#6870fa !important ",
         },
-        "& a.ps-menu-button:hover": {
+        "& a.ps-active ": {
+          color: "#6870fa !important ",
+        },
+        "& a:hover": {
           color: "#6870fa !important ",
           backgroundColor: "transparent !important",
         },

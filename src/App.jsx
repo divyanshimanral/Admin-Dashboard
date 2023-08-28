@@ -6,7 +6,8 @@ import Topbar from "./screens/global/Topbar";
 import Dashboard from "./screens/dashboard/index";
 import MainSidebar from "./screens/global/Sidebar";
 import Team from "./screens/team/index";
-
+import Contact from "./screens/contacts/index";
+import Invoices from "./screens/invoices/index";
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -21,8 +22,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/team" element={<Team />} />
-              {/* <Route path="/contacts" element={<Contact />} /> */}
-              {/* <Route path="/invoices" element={<Invoices />} /> */}
+              <Route path="/contacts" element={<Contact />} />
+              <Route path="/invoices" element={<Invoices />} />
               {/* <Route path="/form" element={<Form />} /> */}
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie />} /> */}
