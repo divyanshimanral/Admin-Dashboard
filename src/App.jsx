@@ -8,6 +8,8 @@ import MainSidebar from "./screens/global/Sidebar";
 import Team from "./screens/team/index";
 import Contact from "./screens/contacts/index";
 import Invoices from "./screens/invoices/index";
+import UserForm from "./screens/form/index";
+import Calender from "./screens/calender/index";
 
 const App = () => {
   const [theme, colorMode] = useMode();
@@ -24,13 +26,13 @@ const App = () => {
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contact />} />
               <Route path="/invoices" element={<Invoices />} />
-              {/* <Route path="/form" element={<Form />} /> */}
+              <Route path="/form" element={<UserForm />} />
+              <Route path="/calender" element={<Calender />} />
               {/* <Route path="/bar" element={<Bar />} /> */}
               {/* <Route path="/pie" element={<Pie />} /> */}
               {/* <Route path="/line" element={<Line />} /> */}
               {/* <Route path="/faq" element={<FAQ />} /> */}
               {/* <Route path="/geography" element={<Geography />} /> */}
-              {/* <Route path="/calender" element={<Calender />} /> */}
             </Routes>
           </main>
         </div>
