@@ -178,11 +178,6 @@ const MainSidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Typography
-              variant="h6"
-              color={colors.grey[300]}
-              sx={{ m: "15px 0 5px 20px" }}
-            ></Typography>
             <Item
               title="FAQ"
               to="/faq"
@@ -220,7 +215,7 @@ const MainSidebar = () => {
             />
             <Item
               title="Geopgraphy Chart"
-              to="/gepgraphy"
+              to="/geography"
               icon={<MapOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

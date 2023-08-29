@@ -42,7 +42,6 @@ const index = () => {
         sx={{
           "& .MuiDataGrid-root": {
             border: "none",
-            height:"100vh",
           },
           "& .MuiDataGrid-cell": {
             borderBottom: "none",
